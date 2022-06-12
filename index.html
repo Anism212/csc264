@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body
+{
+    margin: 0;
+    background:url(canva2.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+a
+{
+    text-decoration:none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+li
+{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2
+{
+ margin-top: 15px;
+ text-transform: uppercase;
+ margin-left: 20px;
+ color:purple;
+ font-family:tahoma;
+
+}
+li:hover,.Home
+{
+    border: 2px solid white;
+	border-radius:6px;
+	
+}
+li a {
+  display: block;
+  color: purple;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-family:tahoma;
+  font-weight: bold;
+  
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+	background:pink;
+	height:67px;
+	
+	
+}
+ul
+{
+    display: flex;
+}
+.contenu
+{
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    align-items: center;
+}
+article
+{
+    width: 460px;
+    text-align: center;
+}
+p
+{
+    font-size: 24px;
+	
+}
+input
+{
+    padding: 12px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px 10px;
+}
+
+.divTotal
+{
+    display: none;
+}
+@media only screen and (MAX-Width:760px)
+{
+    body
+    {
+        width :760px;
+        height: 100vh;
+    }
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #FF33B5;} 
+.button3 {background-color: #f44336;} /* Red */ 
+
+.social-icons{
+	margin: 30px auto;
+	text-align: center;
+	
+}
+.social-icons img{
+	margin: 30px auto;
+	margin: 0 12px;
+	box-shadow: 0 0 20px 0 #3EA055;
+	cursor: pointer;
+	border-radius: 50%;
+	
+	
+}
+
+</style>
+
+</head>
+
+<body>
+
+ <header class="navbar">
+      <div class="LOGO"> 
+         <h2><a target="_blanck">ANIS MASHITAH </a></h2>
+      </div>
+        <nav>
+            <ul>
+                <li class="Home"><a href="index.html">Home</a></li>
+                <li><a href="about me1.html">About</a></li>
+                <li><a href="favourite1.html" class="Favourite">Favourite</a></li>
+                <li><a href="feedback1.html">Feedback</a></li>
+				<li><a href="motivation.html">Motivation</a></li>
+            </ul>
+        </nav>
+        <div class="divTotal">  
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas"></i>  
+            </label>
+        </div>
+    </header>
+    <div class="contenu">
+        <article>
+            <p>Welcome to My Website</p>
+            <button class="button button2"><a href="https://padlet.com/2020848222/Anis_Mashitah_Ahmad_ICT200">Portfolio</a></button>
+           <button class="button button3"><a href="https://www.youtube.com/watch?v=wIbNfdHMgEY">Watch video</a></button>
+		   <div class="social-icons">
+			<a href="https://wa.link/nxc1sa"><img src="whatsapp.png" alt="whatsapp" width="30" height="30" > 
+			<a href="https://t.me/Anism212"><img src="telegram.png" alt="telegram" width="30" height="30" > 
+            <a href="https://www.instagram.com/anismashitah2/"><img src="instagram.jpeg" alt="instagram" width="30" height="30" > 
+		    </div>
+        </article>
+    </div>
+
+
+
+
+</footer>
+</body>
+</html>

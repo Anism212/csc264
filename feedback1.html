@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body
+{
+    margin: 0;
+    background:url(canva2.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+a
+{
+    text-decoration:none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+li
+{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2
+{
+ margin-top: 15px;
+ text-transform: uppercase;
+ margin-left: 20px;
+ color:purple;
+ font-family:tahoma;
+
+}
+li:hover,.Home
+{
+    border: 2px solid white;
+	border-radius:6px;
+}
+li a {
+  display: block;
+  color: purple;
+  text-align: center;
+ 
+  text-decoration: none;
+  font-family:tahoma;
+  font-weight: bold;
+  
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+	background:pink;
+	padding:9px;
+	height:49px;
+	
+	
+	
+}
+ul
+{
+    display: flex;
+}
+
+.contenu
+{
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    align-items: center;
+}
+article
+{
+    width: 460px;
+    text-align: center;
+}
+
+input
+{
+    padding: 12px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px 10px;
+}
+
+.divTotal
+{
+    display: none;
+}
+@media only screen and (MAX-Width:760px)
+{
+    body
+    {
+        width :760px;
+        height: 100vh;
+    }
+}
+
+table {
+  border: 2px solid black;
+  position: center;
+  padding: 10px 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #E7DFD8;
+}
+
+td {
+  border: none;
+  
+ 
+  
+  
+</style>
+<script>
+function validateform()
+	       {
+			   var a = document.forms["feedbackform"]["fnameF"].value;
+			   var b = document.forms["feedbackform"]["age"].value;
+			   var c = document.forms["feedbackform"]["ques"].value;
+			   var d = document.forms["feedbackform"]["feedback21"].value;
+			  
+			   if(a == "")
+				   {
+					   alert("Please fill your name in the blank 😉😘");
+					   return false;
+				   }
+			   if(b == "")
+				   {
+					   alert("Please choose something! 😞😢");
+					   return false;
+				   }
+			   if(c == "")
+				   {
+					   alert("Please type something in there dear 😥😊");
+					   return false;
+				   }
+			 if(d == "")
+				   {
+					   alert("Please type your feedback  in there dear 👀 😥");
+					   return false;
+				   }
+           }
+
+</script>
+</head>
+
+<body>
+
+ <header class="navbar">
+      <div> 
+         <h2>ANIS MASHITAH</h2>
+      </div>
+        <nav>
+            <ul>
+                <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="about me1.html">About</a></li>
+                <li><a href="favourite1.html">Favourite</a></li>
+                <li class="Home"><a href="feedback1.html">Feedback</a></li>
+				<li><a href="motivation.html">Motivation</a></li>
+            </ul>
+            </ul>
+        </nav>
+       </header>
+    <h1 align="center">FEEDBACK FOR THIS WEBSITE!</h1>
+<form id="feedbackform" name="feedbackform" action="Motivation.html" method="POST" onSubmit="return validateform()">
+
+<table style="width:60%">
+
+  <tr>
+    <td> <br>
+	<b> Name: </b>
+    <input type = 'text' name = 'fnameF' size = '30' style = 'color:grey'	
+	onblur="this.value = this.value || this.defaultValue; 	this.style.color 	= 	'#000000'" 
+	onfocus="this.value=''; 	this.style.color = '#000'" 
+
+<p> <b> Age: </b>
+	<select name='age'>
+		<option> Choose your age
+		<option value='1'> Below 20 years old
+		<option value='2'> 20-30 years old
+		<option value='3'> 31-40 years old
+		<option value='4'> Above 40 years old
+	</select>
+
+<p> <b> Gender: </b>
+	<input type='radio' name='gender' value='male' required> Male
+	<input type='radio' name='gender' value='female'required> Female
+	<input type='radio' name='gender' value='both'required> Prefer not to say
+
+<p> <b> How did you get my website's link: </b>
+	<select name='ques'>
+		<option> from
+		<option value='1'> Friend
+		<option value='2'> Lecturer
+		<option value='3'> Online
+	</select>
+
+<p> <b> Which part(s) you like: </b>
+    <input type='checkbox' name='Ho'> Home
+	<input type='checkbox' name='Ab'> About Me
+	<input type='checkbox' name='mu'> Favourite
+	<input type='checkbox' name='mo'> Motivation
+
+	
+	
+<p> <b> Which part(s) should I improve: </b>
+    <input type='checkbox' name='back'> Background
+	<input type='checkbox' name='ani'> Animation
+	<input type='checkbox' name='au'> Audio
+	<input type='checkbox' name='co'> Color
+	<input type='checkbox' name='pi'> Picture
+	
+	<p><b> Feedback:</br>
+			<label for="textarea"></label>
+			<textarea name="feedback21" id="textarea" rows="7" cols="48" wrap="physical"></textarea>
+	
+	    </p>
+	
+	<p> <input type='reset' name='reset' value='Reset'>
+	<input type='submit' name='submit' value='Submit'> </p>
+
+	</td>
+  </tr>
+  
+</table>
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body
+{
+    margin: 0;
+    background:url(canva2.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+a
+{
+    text-decoration:none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+li
+{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2
+{
+ margin-top: 15px;
+ text-transform: uppercase;
+ margin-left: 20px;
+ color:purple;
+ font-family:tahoma;
+}
+li:hover,.Home
+{
+    border: 2px solid white;
+	border-radius:6px;
+}
+li a {
+  display: block;
+  color: purple;
+  text-align: center;
+ 
+  text-decoration: none;
+  font-family:tahoma;
+  font-weight: bold;
+  
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+	background:pink;
+	padding:9px;
+	height:49px;
+}
+ul
+{
+    display: flex;
+}
+
+.contenu
+{
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    align-items: center;
+}
+article
+{
+    width: 460px;
+    text-align: center;
+}
+
+input
+{
+    padding: 12px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px 10px;
+}
+
+.divTotal
+{
+    display: none;
+}
+@media only screen and (MAX-Width:760px)
+{
+    body
+    {
+        width :760px;
+        height: 100vh;
+    }
+}
+
+table {
+  border: 0;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #E7DFD8;
+}
+
+td {
+  border: none;
+  padding: 10px;
+  font-size:30px;
+}
+
+th {
+  border: none;
+  padding: 10px;
+}
+
+.table
+{
+	width: 40%;
+	border-collapse: collapse;
+}
+.table thead
+{
+	background-color: #DC143C;
+}
+.table thead tr th
+{
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.35px;
+	color: white;
+	opacity: 1;
+	padding: 12px;
+	vertical-align: top;
+	border: 1px solid white;
+}
+.table tbody tr td
+{
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	font-weight: normal;
+	color: aliceblue;
+	background: grey;
+	padding: 8px;
+	text-align: center;
+	border: 1px solid white;
+}
+
+@media (max-width: 992px)
+{
+.table thead
+	{
+		display: none;
+	}
+	.table, .table tbody, .table tr, .table td
+	{
+		display: block;
+		width: 100%;
+	}
+	.table tr
+	{
+		margin-bottom: 15px;	
+	}
+	.table tbody tr td
+	{
+		text-align: right;
+		padding-left: 50%;
+		position: relative;
+	}
+	.table td:before
+	{
+		content:attr(data);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 15px;
+		font-weight: 600;
+		font-size: 14px;
+		text-align: left;
+	}
+}
+
+</style>
+
+</head>
+
+<body>
+
+ <header class="navbar">
+      <div> 
+         <h2>ANIS MASHITAH</h2>
+      </div>
+        <nav>
+            <ul>
+                <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li class="Home"><a href="About Me.html">About</a></li>
+                <li ><a href="Favourite1.html">Favourite</a></li>
+                <li><a href="Feedback1.html">Feedback</a></li>
+				<li><a href="motivation.html">Motivation</a></li>
+            </ul>
+            </ul>
+        </nav>
+       </header>
+ <div class="content">
+
+  <table>
+
+    <tr>
+	  <th align="center"> <h1> About Me </h1> </th>
+	</tr>
+	
+	<tr>
+	  <td  "center">
+	  
+	  <center><img src="ANIS.jpeg" alt="ANIS MASHITAH AHMAD " width="250" height="345"></center>
+	    <pre>
+		
+		NAME         : ANIS MASHITAH BINTI AHMAD 
+		NICKNAME     : ANIS
+		BIRTHDATE    : 21 FEBRUARY 2002
+		YEARs        : 20 YEARS
+		HOBBY        : CYCLING AND LISTEN SONGS
+		AMBITION     : DATA ANAYLISIS
+		ORIGIN       : PERLIS
+		COURSE       : COMPUTER SCIENCES
+		GROUP CLASS  : RCS1104D
+		 </pre>
+	  </td>
+	</tr>
+	<table>
+	<tr> <td>
+	  <table class="table">
+				<thead>
+					<tr>
+						<th>School/University Name</th>
+						<th>Place</th>
+						<th>Level of Education</th>
+						<th>Year Start</th>
+						<th>Year End</th>
+						<th>Field of Study</th>
+						<th>Position</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data="School/University Name">SK SIMPANG EMPAT</td>
+						<td data="Place">Simpang Empat, Perlis</td>
+						<td data="Level of Education">PRIMARY SCHOOL</td>
+						<td data="Year Start">2009</td>
+						<td data="Year End">2014</td>
+						<td data="Field of Study">GENERAL</td>
+						<td data="Position">SCHOOL PREFECTS</td>
+					</tr>
+					<tr>
+						<td data="School/University Name">SMK AGAMA PEREMPUAN ALAWIYAH </td>
+						<td data="Place">KANGAR, Perlis</td>
+						<td data="Level of Education">SECONDARY SCHOOL</td>
+						<td data="Year Start">2015</td>
+						<td data="Year End">2019</td>
+						<td data="Field of Study">ACCOUNTING</td>
+						<td data="Position">SCHOOL PREFECTS</td>
+					</tr>
+					<tr>
+						<td data="School/University Name">UiTM CAWANGAN PERLIS</td>
+						<td data="Place">ARAU,PERLIS</td>
+						<td data="Level of Education">DIPLOMA</td>
+						<td data="Year Start">2020</td>
+						<td data="Year End">2023</td>
+						<td data="Field of Study">COMPUTER SCIENCE</td>
+						<td data="Position">NORMAL STUDENT</td>
+					</tr>
+				</tbody>
+			</table>
+	</td> </tr>
+	</table>
+  </table>
+
+</div>
+
+
+</body>
+</html>
